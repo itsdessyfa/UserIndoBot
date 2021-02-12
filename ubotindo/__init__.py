@@ -44,7 +44,7 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 load_dotenv("config.env")
 
 CONFIG_CHECK = os.environ.get(
-    "_____REMOVE_____THIS_____LINE_____") or None
+    "") or None
 
 if CONFIG_CHECK:
     LOGGER.info(
